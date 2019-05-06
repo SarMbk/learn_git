@@ -54,4 +54,7 @@ git log --oneline
 // see only 2 most recent commits in the log
 git log --oneline -2
 
-
+// to hang your repo up on the cloud
+git remote add origin https://github.com/SarMbk/learn_git.git
+git push -u origin master
+// then enter username and pwd
