@@ -1,0 +1,57 @@
+// make directory
+mkdir directoryName
+
+//change current user directory
+cd directoryName
+
+//begin managing project with git
+git init
+
+//see all files in current directory
+ls
+
+//clear terminal
+clear
+
+//Verify that your local repo directory contains a .git directory
+ls -a
+// output should be 
+.				.git
+..				git & terminal cheatsheet
+.DS_Store
+
+//to view status of files in your folder
+git status
+
+//to add a file that you copied into the folder to be tracked
+git add filename
+
+// to create a new file right in the command line
+touch filename.txt     //or it can be touch filename.cpp or .java or any
+
+//to track all files in the directory just type
+// e.g. if im in folder learn_git and I want to track all files in that folder i just type
+git add .
+
+// to stop tracking a file in a local repo
+git rm filename
+
+// to add a subfolder to be tracked
+git add subfolderName
+
+// to remove subfolder from tracking and all that's in it
+git rm -r subfolderName
+
+// to commit with a short message
+git commit -m "commit message"
+
+// see the commit history
+git log
+
+// see condensed version of log
+git log --oneline
+
+// see only 2 most recent commits in the log
+git log --oneline -2
+
+
