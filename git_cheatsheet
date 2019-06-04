@@ -55,6 +55,21 @@ git log --oneline
 git log --oneline -2
 
 // to hang your repo up on the cloud
+// if you started only with a local repo, first provide information on where the remote repository is
+// in this case "origin" is an alias we gave to the remote repo. It can be any name (i.e. origin is not a git keyword but just a repo name)
 git remote add origin https://github.com/SarMbk/learn_git.git
+// then push your commits to the remote repo that you just specified
+git push [-u] [remote repo alias or url] [branch name] // -u means upstream, origin is a repo alias, master is the branch we are syncing to
 git push -u origin master
 // then enter username and pwd
+
+// clone(copy) info from a remote repo (cloud) to a local repo
+// 1. navigate to the directory where you want the local repo to be e.g.
+cd myRepos
+// 2. use git clone command e.g.
+git clone https://github.com/SarMbk/learn_git.git
+
+
+// display information about your remote repository. This will show what repo you fetch from and what repo you push to
+// git remote --verbose same as git remote -v same as git remote --v
+git remote -v
