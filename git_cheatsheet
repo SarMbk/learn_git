@@ -8,8 +8,8 @@
  * Tree = object containing a list of filenames and directories inside of a directory
  * Blob = object that stores the content of a file that is being managed by git
  * 
- * Git ID is a name of a git object (40 char hexadecimal string) that is obtained by hashing the contents of objects using Secure Hashing Algorithm 1.
- * Therefore Git ID is also called the SHA-1 value.
+ * Git ID is a name of a git object (40 char hexadecimal string) that is obtained by hashing the contents of objects using
+ * Secure Hashing Algorithm 1.Therefore Git ID is also called the SHA-1 value.
  */
 
 
