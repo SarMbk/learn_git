@@ -1,17 +1,22 @@
 // make directory
 mkdir directoryName
 
+
 //change current user directory
 cd directoryName
+
 
 //begin managing project with git
 git init
 
+
 //see all files in current directory
 ls
 
+
 //clear terminal
 clear
+
 
 //Verify that your local repo directory contains a .git directory
 ls -a
@@ -20,39 +25,51 @@ ls -a
 ..				git & terminal cheatsheet
 .DS_Store
 
+
 //to view status of files in your folder
 git status
+
 
 //to add a file that you copied into the folder to be tracked
 git add filename
 
+
 // to create a new file right in the command line
 touch filename.txt     //or it can be touch filename.cpp or .java or any
+
 
 //to track all files in the directory just type
 // e.g. if im in folder learn_git and I want to track all files in that folder i just type
 git add .
 
+
 // to stop tracking a file in a local repo
 git rm filename
+
 
 // to add a subfolder to be tracked
 git add subfolderName
 
+
 // to remove subfolder from tracking and all that's in it
 git rm -r subfolderName
+
 
 // to commit with a short message
 git commit -m "commit message"
 
+
 // see the commit history
 git log
+
 
 // see condensed version of log
 git log --oneline
 
+
 // see only 2 most recent commits in the log
 git log --oneline -2
+
 
 // to hang your repo up on the cloud
 // if you started only with a local repo, first provide information on where the remote repository is
@@ -62,6 +79,7 @@ git remote add origin https://github.com/SarMbk/learn_git.git
 git push [-u] [remote repo alias or url] [branch name] // -u means upstream, origin is a repo alias, master is the branch we are syncing to
 git push -u origin master
 // then enter username and pwd
+
 
 // clone(copy) info from a remote repo (cloud) to a local repo
 // 1. navigate to the directory where you want the local repo to be e.g.
@@ -74,8 +92,10 @@ git clone https://github.com/SarMbk/learn_git.git
 // git remote --verbose same as git remote -v same as git remote --v
 git remote -v
 
+
 // add a readme file to the remote repo
 echo "# Project readme" >> readme.md
+
 
 // thus to clone a repo, work on it and then commit you use the following commands
 cd myRepos
@@ -93,5 +113,3 @@ git push -u origin master
 
 // show commit tree in the command line
 git log --oneline --graph
-
-
