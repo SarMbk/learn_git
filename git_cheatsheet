@@ -91,3 +91,7 @@ git commit -m "commit message"
 git push -u origin master 
 
 
+// show commit tree in the command line
+git log --oneline --graph
+
+
