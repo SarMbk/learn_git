@@ -73,3 +73,21 @@ git clone https://github.com/SarMbk/learn_git.git
 // display information about your remote repository. This will show what repo you fetch from and what repo you push to
 // git remote --verbose same as git remote -v same as git remote --v
 git remote -v
+
+// add a readme file to the remote repo
+echo "# Project readme" >> readme.md
+
+// thus to clone a repo, work on it and then commit you use the following commands
+cd myRepos
+git clone https://github.com/SarMbk/learn_git.git
+git commit -m "commit message"
+git push -u origin master 
+
+
+// if you already have a local repo but no remote repo, this is what you do
+cd myRepos
+git remote add origin https://github.com/SarMbk/learn_git.git   //origin is just the repo alias
+git commit -m "commit message"
+git push -u origin master 
+
+
