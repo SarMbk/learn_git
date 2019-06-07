@@ -161,6 +161,8 @@ git push <remote> <tagname>	// transfers an individual tag
 git push <remote> --tags	// transfers all tags
 
 
+// delete local tag v1
+git tag -d v1
 
 
 
