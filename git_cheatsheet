@@ -192,7 +192,30 @@ git branch -d branchName
 git reflog
 
 
+// show all branches in a log
+git log --oneline --graph --all
 
 
+// 4 types of merges: fast-forward; merge commit; squash merge; rebase
+// Fast forward merge:
 
+before: 
+    B - C
+  /
+A
+
+after:
+A - B - C
+
+// FF merge only possible when no commits were made to the master branch after
+// the topic branch was created. I.e. FF merge not possible in the following situation (git will not allow an FF merge):
+    B - C
+  /
+A - D 
+
+
+// Steps for an FF merge
+git checkout master
+git merge topicBranchName
+git branch -d topicBranchName
 
