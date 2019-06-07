@@ -123,3 +123,49 @@ cd myRepos
 git remote add origin https://github.com/SarMbk/learn_git.git   //origin is just the repo alias
 git commit -m "commit message"
 git push -u origin master 
+
+
+// Show info about a specific commit
+git show <reference>
+
+
+// master = default name of main branch in a repo.
+git show head 	// will show commit info for the most recent commit
+git show head~	// will show
+git show head~1	// will show info for previous commit
+git show head~4	// will show info for 4th previous commit, same as git show head~~~~
+
+
+// ^ character is used for showing parents in merge commits
+git show head^ 	// will show first parent of the most current commit
+git show head^^ // will show first parent's first parent, if they are all on one
+		// branch, first parents stay on same branch
+git show head^2 // will show second parent of the most current commit
+		// it will return an error if the most current commit is not
+		// a result of a merge. note git show head^2 != git show head^^
+		// git show head^2 shows second parent
+		// git show head^^ shows first parent's first parentclea
+
+
+// to tag the current commit:
+git tag v1.0	// v1.0 is the tagname
+
+
+// to tag a commit with an annotated tag; if you dont specify a commit
+// it will tag the current commit
+git tag -a -m "put comments here" v1 [optional: specify a commit SHA1]
+
+
+// git push alone does not transer tags to a remote location
+git push <remote> <tagname>	// transfers an individual tag
+git push <remote> --tags	// transfers all tags
+
+
+
+
+
+
+
+
+
+
