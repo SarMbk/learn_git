@@ -219,6 +219,20 @@ git checkout master
 git merge topicBranchName
 git branch -d topicBranchName
 
+// Continue next time on wk2 merging 6:00
 
-// Merge Commit:
+
+// Merge Commit (merge conflicts will be discussed later):
+    B - C
+  /       \ 
+A - D - E - F
+
+// F will have changes of both C and E
+// Steps for merge commit:
+git checkout master
+git merge featureX	// if merge is not fast-forwardable, it will auto attempt
+git branch -d featureX	// to perform a merge commit
+
+
+
 
