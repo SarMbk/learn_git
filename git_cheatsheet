@@ -165,6 +165,31 @@ git push <remote> --tags	// transfers all tags
 git tag -d v1
 
 
+// see list of branches
+git branch
+
+
+// create a branch
+git branch branchName	// only creates a branch, does not update head
+
+
+// to change what head to the newly created branch use:
+git checkout branchName
+
+// to go back to a specific commit
+git checkout <commit SHA1>
+
+
+// to create and switch to (checkout) a branch in one line:
+git checkout -b branchName
+
+
+// to delete a branch
+git branch -d branchName
+
+
+// get local list of head commits
+git reflog
 
 
 
