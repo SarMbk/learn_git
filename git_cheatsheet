@@ -243,6 +243,15 @@ git branch -d featureX .
 test feature 2
 now test feature 3 on master
 test feature 4 on master
+// Merging with merge conflicts
+// 1. Checkout master
+// 2. Merge featureX (i.e. secondary branch)
+// 3. Git will markup your code wherever conflicts occur
+// 4. Fix your code using your own reasoning (manually look at code make decisions)
+// 5. Add file to staging area again using git add <conflicted file name>
+// 6. Commit again after you manually resolved marked up conflicts
+// 7. Optionally delete featureX branch
+// 8. git push -u origin master
 
 
 
