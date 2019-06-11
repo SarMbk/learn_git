@@ -240,9 +240,6 @@ git merge --no-ff featureX
 git branch -d featureX .
 
 
-test feature 2
-now test feature 3 on master
-test feature 4 on master
 // Merging with merge conflicts
 // 1. Checkout master
 // 2. Merge featureX (i.e. secondary branch)
