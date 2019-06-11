@@ -239,6 +239,8 @@ git checkout master
 git merge --no-ff featureX
 git branch -d featureX .
 
+
+test feature 2
 now test feature 3 on master
 test feature 4 on master
 
