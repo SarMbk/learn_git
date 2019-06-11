@@ -237,8 +237,9 @@ git branch -d featureX	// to perform a merge commit
 // A merge can be fast forwardable but you want to explicitly do a merge commit:
 git checkout master
 git merge --no-ff featureX
-git branch -d featureX
+git branch -d featureX .
 
+test feature 2
 
 
 
