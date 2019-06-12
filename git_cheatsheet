@@ -1,3 +1,9 @@
+// These are my personal notes on using git from the course available on coursera. It is probably of little use to anyone else.
+// For those wishing to learn how to use git, i highly recommend taking this course. It is called "Version Control with GIT" by Atlassian.
+// https://www.coursera.org/learn/version-control-with-git/home/
+// Great no nonsense course that takes you through git from zero to a well versed git user.
+
+
 /* Internally git uses:
  * Commit object = text file containing:
  * 	commit user info
