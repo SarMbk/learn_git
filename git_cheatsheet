@@ -261,5 +261,5 @@ git log origin/master --oneline
 // set head to a remote tracking branch
 git remote set-head <remote repo name> <tracking branch name>
 
-// Fetch, Pull & Pushgit
+// Fetch, Pull & Push. Test remote commit
 
