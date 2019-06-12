@@ -261,5 +261,35 @@ git log origin/master --oneline
 // set head to a remote tracking branch
 git remote set-head <remote repo name> <tracking branch name>
 
-// Fetch, Pull & Pushgit
+// Fetch, Pull & Push
+// Fetch, clone, pull and push are network commands. i.e. they interact with the
+// remote repository
+// Clone - copies a remote repo 
+// Fetch - retrieves new objects and references from the remote repo
+// Pull - fetches and merges commits locally
+// Push - adds new objects and references to the remote repo
 
+
+// When you see git log
+* cc0c583 (HEAD -> master, origin/master, origin/HEAD) personal notes on using git
+means local HEAD master branch label and the remote tracking branch label
+(i.e. origin/master) point to the same commit. I.e. this commit is in sync
+both locally and remotely 
+
+// HEAD->master can get behind origin master when you use git fetch origin
+// that means that someone else has pushed a commit
+// git fetch does not move the local master branch label, only retrieves the
+// commits from a remote repo
+
+
+// Git pull:
+// Git pull combines git fetch and git merge FETCH_HEAD
+// Merging options:
+git pull --ff		// fast forward if possible, otherwise merge
+git pull --no-ff	// always merge commit
+git pull --ff-only	// cancel instead of a merge commit
+git pull --rebase [--preserve-merges]
+
+
+// Fetch or pull before pushing. If you have a later commit on the remote repo
+// and you try to push, the push will fail
