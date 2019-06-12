@@ -294,6 +294,7 @@ git pull --rebase [--preserve-merges]
 // Fetch or pull before pushing. If you have a later commit on the remote repo
 // and you try to push, the push will fail
 
-
-this is a test local
-this is a test remote
+// Suggested steps for syncing with remote
+// 1. make your changes to the code
+// 2. commit changes locally
+// 3. run a git pull, because you have a local commit
