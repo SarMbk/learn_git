@@ -297,4 +297,9 @@ git pull --rebase [--preserve-merges]
 // Suggested steps for syncing with remote
 // 1. make your changes to the code
 // 2. commit changes locally
-// 3. run a git pull, because you have a local commit
+// 3. run a git pull. If there has not been commits from others on the remote repo, //    it will return "already up to date"
+//    But if there is a commit from someone else on the remote, it will perform a 
+//    merge commit since the merge is not fast forwardable because you have 
+//    some local commits.
+// 4. If there are merge conflicts, resolve merge conflicts
+// 5. Once you merged remote commits with your local commits, perform git push
