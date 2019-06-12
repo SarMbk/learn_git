@@ -251,4 +251,15 @@ git branch -d featureX .
 // 8. git push -u origin master
 
 
+// Tracking branches
+// Display all local and tracking branch names:
+git branch --all
+
+// display commits of only a certain branch (e.g. master branch)
+git log origin/master --oneline
+
+// set head to a remote tracking branch
+git remote set-head <remote repo name> <tracking branch name>
+
+// Fetch, Pull & Pushgit
 
