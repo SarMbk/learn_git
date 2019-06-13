@@ -337,3 +337,19 @@ git rebase master
 git rebase master featureX
 
 
+// Amending the most recent commit (e.g. when you have a typo in the description message)
+// e.g.
+git commit -m "message with a typo"
+git log // you noticed in the log that your commit had a typo
+git commit --amend -m "corrected message with not typo" // this will change the hash
+
+
+// When you want to amend the actual code of the most recent commit:
+1. git commit -m "most recent commit"
+2. Then change your code
+3. git add .
+4. git commit --amend --no-edit // amends the code but not the commit message
+
+
+
+
