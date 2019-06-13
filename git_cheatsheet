@@ -309,3 +309,28 @@ git pull --rebase [--preserve-merges]
 //    some local commits.
 // 4. If there are merge conflicts, resolve merge conflicts
 // 5. Once you merged remote commits with your local commits, perform git push
+
+
+// Rebasing
+// rebasing moves commits to a new parent e.g.
+
+Before rebase:
+    B - C
+  /
+A - D
+
+After rebase:
+      B' - C'
+     /
+A - D
+
+// Rebasing: 1. Checkout a feature branch. 2. Rebase into other branch (e.g. master)
+git checkout featureX
+git rebase master
+
+// or in one line
+git rebase master featureX
+
+
+
+
