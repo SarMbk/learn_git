@@ -350,3 +350,33 @@ git commit --amend -m "corrected message with not typo" // this will change the 
 3. git add .
 4. git commit --amend --no-edit // amends the code but not the commit message
 // or git commit --amend -m "amended message" // amends both code and message
+
+
+// Squash merge squashes two branches to result in a linear commit history
+
+before:
+    B - D
+  /
+A - C
+
+after:
+A - C - E
+
+// if a squash merge is fast forwardable you will get:
+
+before:
+    B - C
+  /
+A 
+
+after:
+A - D 	// squash merge merged the 2 commits on the branch and 
+	// wired them to the main branch
+
+1. git checkout master
+2. git merge --squash featureX
+3. git commit
+   3a. accept or modify the squash message
+4. git branch -D featureX
+
+
