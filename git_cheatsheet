@@ -350,7 +350,3 @@ git commit --amend -m "corrected message with not typo" // this will change the 
 3. git add .
 4. git commit --amend --no-edit // amends the code but not the commit message
 // or git commit --amend -m "amended message" // amends both code and message
-
-
-
-
