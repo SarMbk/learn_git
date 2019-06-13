@@ -336,6 +336,4 @@ git rebase master
 // or in one line
 git rebase master featureX
 
-//tst
-
 
