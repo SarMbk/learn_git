@@ -213,6 +213,7 @@ A
 after:
 A - B - C
 
+
 // FF merge only possible when no commits were made to the master branch after
 // the topic branch was created. I.e. FF merge not possible in the following situation (git will not allow an FF merge):
     B - C
@@ -225,13 +226,12 @@ git checkout master
 git merge topicBranchName
 git branch -d topicBranchName
 
-// Continue next time on wk2 merging 6:00
-
 
 // Merge Commit (merge conflicts will be discussed later):
     B - C
   /       \ 
 A - D - E - F
+
 
 // F will have changes of both C and E
 // Steps for merge commit:
@@ -261,11 +261,14 @@ git branch -d featureX .
 // Display all local and tracking branch names:
 git branch --all
 
+
 // display commits of only a certain branch (e.g. master branch)
 git log origin/master --oneline
 
+
 // set head to a remote tracking branch
 git remote set-head <remote repo name> <tracking branch name>
+
 
 // Fetch, Pull & Push
 // Fetch, clone, pull and push are network commands. i.e. they interact with the
@@ -281,6 +284,7 @@ git remote set-head <remote repo name> <tracking branch name>
 means local HEAD master branch label and the remote tracking branch label
 (i.e. origin/master) point to the same commit. I.e. this commit is in sync
 both locally and remotely 
+
 
 // HEAD->master can get behind origin master when you use git fetch origin
 // that means that someone else has pushed a commit
@@ -299,6 +303,7 @@ git pull --rebase [--preserve-merges]
 
 // Fetch or pull before pushing. If you have a later commit on the remote repo
 // and you try to push, the push will fail
+
 
 // Suggested steps for syncing with remote
 // 1. make your changes to the code
@@ -331,6 +336,6 @@ git rebase master
 // or in one line
 git rebase master featureX
 
-
+//tst
 
 
