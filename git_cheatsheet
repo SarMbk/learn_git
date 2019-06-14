@@ -363,7 +363,7 @@ after:
 A - C - E
 
 // if a squash merge is fast forwardable you will get:
-
+git 
 before:
     B - C
   /
@@ -380,3 +380,18 @@ A - D 	// squash merge merged the 2 commits on the branch and
 4. git branch -D featureX
 
 
+// Single repo pull  requests
+// brfore making a pull request you need to prepare for the request
+// To prepare for the request:
+// 1. Create a feature branch (eventually it will be merged)
+// 2. Optionally work on feature branch
+// 3. Push branch to the remote repo
+// eg. below:
+git checkout -b "featureX"
+touch fileA.txt
+git add fileA.txt
+git commit -m "added featureX"
+git push --set-upstream origin featureX
+// The last command above means:
+// --set-upstream = set up a local tracking branch
+// push to origin on branch featureX
