@@ -395,3 +395,8 @@ git push --set-upstream origin featureX
 // The last command above means:
 // --set-upstream = set up a local tracking branch
 // push to origin on branch featureX
+
+// Then you can go to github and create pull request for the branch
+// you just pushed up
+// When you add commits to the branch, the pull request will be 
+// automatically updated
