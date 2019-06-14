@@ -387,11 +387,13 @@ A - D 	// squash merge merged the 2 commits on the branch and
 // 2. Optionally work on feature branch
 // 3. Push branch to the remote repo
 // eg. below:
+
 git checkout -b "featureX"
 touch fileA.txt
 git add fileA.txt
 git commit -m "added featureX"
 git push --set-upstream origin featureX
+
 // The last command above means:
 // --set-upstream = set up a local tracking branch
 // push to origin on branch featureX
@@ -400,3 +402,6 @@ git push --set-upstream origin featureX
 // you just pushed up
 // When you add commits to the branch, the pull request will be 
 // automatically updated
+
+// after you merge a pull request optionally delete your branch
+git push -D featureX
