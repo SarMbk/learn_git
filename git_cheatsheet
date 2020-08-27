@@ -411,3 +411,20 @@ git reset --hard <commit hash>
 
 // To roll back to the latest commit thats on the remote repo
 git reset --hard origin/master
+
+// To know what branch you are currently on and what branches exist
+git branch
+
+// To create a new branch and switch to it
+git checkout -b <new branch name>
+
+// To switch to an existing branch
+git checkout <existing branch name>
+
+// To merge changes from branch featureX to master
+git checkout master // make sure you are currently on master branch
+git merge featureX // merge featureX branch into master
+
+// Fork means to make your own copy of someone else's original repository
+
+
