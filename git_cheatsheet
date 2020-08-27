@@ -405,3 +405,9 @@ git push --set-upstream origin featureX
 
 // after you merge a pull request optionally delete your branch
 git push -D featureX
+
+// To roll back to a particular commit
+git reset --hard <commit hash>
+
+// To roll back to the latest commit thats on the remote repo
+git reset --hard origin/master
